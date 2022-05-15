@@ -21,6 +21,6 @@ function to_js_process_end(msg) {
 eel.expose(to_js_process_doing);
 function to_js_process_doing(page_count, max_page,max_data) {
     document.getElementById("text_box").innerHTML = 'スクレイピング データ取得中';
-    document.getElementById("text_box2").innerHTML = '全'+max_data+'件・'+ max_page +'ページあります。';
+    document.getElementById("text_box2").innerHTML = '全'+max_data+'件・'+ max_page +'ページあります';
     document.getElementById("text_box3").innerHTML = page_count +'/'+max_page +'ページ目の処理を開始しています';
 }

@@ -8,7 +8,6 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 
 class ChromeDriver():
-    
     LOG_FILE_PATH = "logs/log_{datetime}.log"
     log_file_path = LOG_FILE_PATH.format(datetime=datetime.datetime.now().strftime('%Y-%m-%d-%H-%M-%S'))
 
@@ -44,6 +43,8 @@ class ChromeDriver():
         
 
     def log(self, txt):
+        
+        
         now = datetime.datetime.now().strftime('%Y-%m-%d-%H-%M-%S')
         logStr = '[%s: %s] %s' % ('log',now , txt)
         # ログ出力
